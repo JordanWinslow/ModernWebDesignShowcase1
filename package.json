@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
-  "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "name": "modern-web-design-showcase-1",
+  "private": false,
+  "description": "This website was designed from scratch with React, Gatsby, GraphQL and Styled-Components. It is designed mobile-first with a responsive design including responsive text utilizing 'vw' measurement units as well as media queries.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Jordan Winslow <admin@jordanwinslow.me>",
   "dependencies": {
     "gatsby": "^2.13.67",
     "gatsby-image": "^2.2.8",
