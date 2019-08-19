@@ -1,0 +1,104 @@
+{
+  "logo": [
+    {
+      "title": "JavaScript",
+      "image": "https://gdurl.com/7wI1"
+    },
+    {
+      "title": "HTML 5",
+      "image": "https://gdurl.com/mlIT"
+    },
+    {
+      "title": "CSS 3",
+      "image": "https://gdurl.com/HmPb"
+    },
+    {
+      "title": "Visual Studio Code",
+      "image": "https://gdurl.com/RPg1"
+    },
+    {
+      "title": "React",
+      "image": "https://gdurl.com/NEgb"
+    },
+    {
+      "title": "Gatsby",
+      "image": "https://gdurl.com/2MmS"
+    },
+    {
+      "title": "Wordpress",
+      "image": "https://gdurl.com/enhx"
+    },
+    {
+      "title": "Mailchimp",
+      "image": "https://gdurl.com/BWPD"
+    },
+    {
+      "title": "D3.js",
+      "image": "https://gdurl.com/njpn"
+    },
+    {
+      "title": "GraphQL",
+      "image": "https://gdurl.com/hMc1"
+    },
+    {
+      "title": "Figma",
+      "image": "https://gdurl.com/SulS"
+    },
+    {
+      "title": "Gimp",
+      "image": "https://gdurl.com/3Lqe"
+    },
+    {
+      "title": "Canva",
+      "image": "https://gdurl.com/YQ13"
+    },
+    {
+      "title": "Github",
+      "image": "https://gdurl.com/2z4F"
+    },
+    {
+      "title": "Netlify",
+      "image": "https://gdurl.com/JnIY"
+    },
+    {
+      "title": "Ubuntu",
+      "image": "https://gdurl.com/kt93"
+    },
+    {
+      "title": "Windows10",
+      "image": "https://gdurl.com/XZZq"
+    },
+    {
+      "title": "Sass",
+      "image": "https://gdurl.com/XfeK"
+    },
+    {
+      "title": "Styled-Components",
+      "image": "https://gdurl.com/t7U6"
+    },
+    {
+      "title": "Bootstrap",
+      "image": "https://gdurl.com/N9nk"
+    },
+    {
+      "title": "Shopify",
+      "image": "https://gdurl.com/CwOf"
+    },
+    {
+      "title": "PayPal",
+      "image": "https://gdurl.com/Edwu"
+    },
+    {
+      "title": "Stripe",
+      "image": "https://gdurl.com/oHm5"
+    },
+    {
+      "title": "Babel",
+      "image": "https://gdurl.com/QXdP"
+    },
+    {
+      "title": "Google Drive",
+      "image": "https://gdurl.com/mQzZ"
+    }
+  ]
+}

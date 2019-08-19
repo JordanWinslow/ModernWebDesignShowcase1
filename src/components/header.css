@@ -1,0 +1,74 @@
+.Header {
+  position: fixed;
+  width: 100%;
+  padding: 50px 0;
+  z-index: 100;
+  transition: 0.8s ease-out;
+}
+
+.HeaderScrolled {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px 0;
+  backdrop-filter: blur(20px);
+}
+
+.HeaderGroup {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  /* 5 links, 5 grid columns. Autospaced based off width of content */
+  align-items: center;
+  justify-items: center;
+}
+
+.Header a {
+  color: white;
+  font-weight: 700;
+  transition: 0.4s;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.Header a:hover {
+  background: #00808067;
+}
+
+.Header button {
+  padding: 8px 20px;
+  font-size: 20px;
+  background: #00ffeb;
+  border: none;
+  /* BUTTONS COME WITH DEFAULT BORDERS. THIS REMOVES THEM */
+  font-weight: 700;
+  border-radius: 10px;
+  /* MAKE IT ROUND */
+  outline: none;
+  /* SIMILAR TO BORDERS, BUTTONS AUTOMATICALLY INCLUDE AN OUTLINE WHEN CLICKED BY DEFAULT. THIS REMOVES THAT OUTLINE */
+  cursor: pointer;
+  /* CHANGES THE MOUSE CURSOR TO A POINTING FINGER WHEN HOVERING OVER THE BUTTON */
+  transition: 1.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+  /* WE ADD A TRANSITION VALUE TO DETERMINE HOW LONG IT TAKES FOR THE HOVER VALUES TO KICK IN - WE CAN ALSO SPEED UP OR SLOW DOWN THE ANIMATION DURING EACH "Cycle" BY ADDING A cubic-bezier function. */
+}
+
+.Header button:hover {
+  background: white;
+  /* box-shadow: Xvalue Yvalue SpreadValue then color */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  transform: translateY(-3px);
+}
+
+/* MEDIA QUERY SAYS WHEN THE WINDOW SHRINKS BELOW THE DEFINED VALUE, CHANGE ALL OF THE FOLLOWING CSS ITEMS */
+@media (max-width: 640px) {
+  /* WHEN THE WIDTH OF THE VIEW WINDOW IS LESS THAN 640 WE LOWER THE TOP AND BOTTOM PADDING OF THE NAVIGATION LINKS */
+  .Header {
+    padding: 15px 0;
+  }
+  .HeaderGroup {
+    grid-template-columns: repeat(4, auto);
+  }
+  /* STOP DISPLAYING THE 4TH LINK IN THE HEADER CLASS */
+  .Header a:nth-child(4) {
+    display: none;
+  }
+}
