@@ -72,3 +72,15 @@
     display: none;
   }
 }
+
+@media only screen and (max-width: 480px) {
+  .Header a {
+    font-size: 1rem;
+  }
+  .HeaderGroup img {
+    width: 40px;
+  }
+  .HeaderGroup button {
+    font-size: 1rem;
+  }
+}

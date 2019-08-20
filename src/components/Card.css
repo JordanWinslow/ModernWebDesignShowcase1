@@ -1,53 +1,73 @@
 .Card {
-    width: 300px;
-    height: 225px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 20px;
-    box-shadow: 5px 20px 25px rgba(0, 0, 0, 0.87);
-    /* FOR ALIGNING THE TEXT PROPERLY INSIDE THE CARD WE CREATE A GRID */
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    /* WE USE 2 ROWS, ONE FOR THE TITLE, ONE FOR THE DESCRIPTION */
-    transition: .5s ease-out;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 5px 20px 25px rgba(0, 0, 0, 0.87);
+  /* FOR ALIGNING THE TEXT PROPERLY INSIDE THE CARD WE CREATE A GRID */
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  /* WE USE 2 ROWS, ONE FOR THE TITLE, ONE FOR THE DESCRIPTION */
+  min-height: 200px;
+  transition: 0.5s ease-out;
 }
 
 .Card:hover {
-    /* scale(XVALUE, YVALUE) 1.1 = 110% WHICH IS WHAT WE SET OUR BACKGROUND IMAGE TO BELOW */
-    transform: scale(1.1, 1.1);
-    box-shadow: 10px 30px 40px rgba(0, 0, 0, 0.87);
+  /* scale(XVALUE, YVALUE) 1.1 = 110% WHICH IS WHAT WE SET OUR BACKGROUND IMAGE TO BELOW */
+  transform: scale(1.1, 1.1);
+  box-shadow: 10px 30px 40px rgba(0, 0, 0, 0.87);
 }
 
 .Card:hover img {
-    transform: translateY(-20px);
+  transform: translateY(-20px);
 }
 
 .Card img {
-    position: absolute;
-    top: 0;
-    height: 110%;
-    z-index: -1; 
-    /* SINCE WE ARE POSITIONING IT ABSOLUTE, TO ENSURE OUR TEXT IS VISIBLE, WE MUST LOWER THE Z INDEX */
-    transition: .5s ease-out;
-    /* WE ADD A TRANSITION TO THE IMAGE PROPERTY SO WE CAN TRANSLATE THE Y LOCATION OF THE IMAGE DURING OUR ANIMATION WITHOUT IT LOOKING LIKE IT JUMPS AROUND */
+  position: absolute;
+  z-index: -1;
+  /* SINCE WE ARE POSITIONING IT ABSOLUTE, TO ENSURE OUR TEXT IS VISIBLE, WE MUST LOWER THE Z INDEX */
+  transition: 0.5s ease-out;
+  /* WE ADD A TRANSITION TO THE IMAGE PROPERTY SO WE CAN TRANSLATE THE Y LOCATION OF THE IMAGE DURING OUR ANIMATION WITHOUT IT LOOKING LIKE IT JUMPS AROUND */
 }
 
 .Card h3 {
-    color: white;
-    font-size: 30px;
-    margin: 20px 0 0 20px;
-    /* THE TEXT IS ALIGNED TO THE TOP LEFT OF THE CARD SO WE ADD A MARGIN TO SPACE IT DOWN 20px FROM THE TOP AND FROM THE LEFT */
-    width: 265px;
-    /* THIS ENSURES THE TEXT DOES NOT EXTEND OUTSIDE OF THE CARD */
-    
+  color: white;
+  font-size: 30px;
+  margin: 20px 0 0 20px;
+  /* THE TEXT IS ALIGNED TO THE TOP LEFT OF THE CARD SO WE ADD A MARGIN TO SPACE IT DOWN 20px FROM THE TOP AND FROM THE LEFT */
+  max-width: 265px;
+  /* THIS ENSURES THE TEXT DOES NOT EXTEND OUTSIDE OF THE CARD */
 }
 
 .Card p {
-    color: rgba(255, 255, 255, 0.8);
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 18px;
-    width: 265px;
-    margin: 0 0 20px 20px;
-    align-self: end;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px;
+  width: 265px;
+  margin: 0 0 20px 20px;
+  align-self: end;
+}
+
+@media (max-width: 1024px) {
+  .Card {
+    min-height: 170px;
+  }
+  .Card h3 {
+    font-size: 1.6rem;
+  }
+  .Card p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .Card {
+    min-height: 100px;
+  }
+  .Card h3 {
+    font-size: 1.1rem;
+  }
+  .Card p {
+    font-size: 0.7rem;
+  }
 }

@@ -98,7 +98,6 @@ const IndexPage = () => (
       title="My Areas of Expertise & Tech-Stack"
       text="Below I have programmed a grid which intelligently adapts to your screen, fetches a series of logos and titles from a .json file and then automatically displays them in the perfect size along with some basic animation and a gradient background."
     />
-
     <VendorLogoGrid />
     <Footer />
   </Layout>
