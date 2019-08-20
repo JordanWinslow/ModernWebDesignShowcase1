@@ -9,6 +9,7 @@ const ColumnContainer = styled.div`
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 2vw;
   margin: 0 15vw 0;
+  padding-top: 30px;
   padding-bottom: 40px;
 
   @media (max-width: 1024px) {
