@@ -8,7 +8,7 @@ import "./header.css"
 // import logo from "../images/logo-designcode.svg"
 // OR WE CAN USE "require("../images/etc.") INLINE
 
-const Header = ({ siteTitle }) => {
+const Header = () => {
   /* USING REACT HOOKS TO DETERMINE IF USER HAS SCROLLED OR NOT SO WE CAN CHANGE THE BACKGROUND OF OUR NAVBAR TO A SOLID COLOR */
   let [hasScrolled, setScrollState] = useState(false)
   /* INSTEAD OF componentDidMount WE ARE USING EFFECT HOOKS */

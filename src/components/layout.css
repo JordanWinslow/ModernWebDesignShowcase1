@@ -75,10 +75,10 @@ a {
   color: white;
   font-size: 60px;
   line-height: 1.2;
-
+  
   opacity: 0;
   /* WE SET THE TEXT TO BE INVISIBLE WHEN THE PAGE LOADS, THEN WE RUN THE BELOW ANIMATION WHICH GRADUALLY MAKES IT VISIBLE */
-
+  will-change: translate;
   animation: HeroAnimation;
   /* HeroAnimation IS SET BELOW IN THE KEYFRAMES SECTION */
 
@@ -90,6 +90,7 @@ a {
 
   animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
   /* ANIMATION-TIMING-FUNCTION ALLOWS US TO SPEED UP OR SLOW DOWN THE ANIMATION THROUGHOUT IT'S "CYCLES" - JUST USE A PRESET BY PRESSNIG CTRL + SPACE ON VS CODE */
+  
 }
 
 .Hero p {

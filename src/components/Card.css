@@ -8,6 +8,7 @@
   grid-template-rows: 1fr 1fr;
   /* WE USE 2 ROWS, ONE FOR THE TITLE, ONE FOR THE DESCRIPTION */
   min-height: 200px;
+  will-change: transform;
   transition: 0.5s ease-out;
 }
 
