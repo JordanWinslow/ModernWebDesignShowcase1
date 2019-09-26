@@ -13,67 +13,18 @@ a {
   font-weight: 600;
 }
 
-.Hero {
-  margin: 0;
-  /*FALLBACK GRADIENT */
-  background: linear-gradient(
-      135deg,
-      rgba(76, 76, 76, 0.04) 0%,
-      rgba(76, 76, 76, 0.04) 10%,
-      rgba(149, 149, 149, 0.04) 10%,
-      rgba(149, 149, 149, 0.04) 100%
-    ),
-    linear-gradient(
-      90deg,
-      rgba(196, 196, 196, 0.04) 0%,
-      rgba(196, 196, 196, 0.04) 59%,
-      rgba(68, 68, 68, 0.04) 59%,
-      rgba(68, 68, 68, 0.04) 100%
-    ),
-    linear-gradient(
-      45deg,
-      rgba(39, 39, 39, 0.01) 0%,
-      rgba(39, 39, 39, 0.01) 9%,
-      rgba(218, 218, 218, 0.01) 9%,
-      rgba(218, 218, 218, 0.01) 100%
-    ),
-    linear-gradient(
-      0deg,
-      rgba(26, 26, 26, 0.04) 0%,
-      rgba(26, 26, 26, 0.04) 33%,
-      rgba(90, 90, 90, 0.04) 33%,
-      rgba(90, 90, 90, 0.04) 100%
-    ),
-    linear-gradient(
-      135deg,
-      rgba(37, 37, 37, 0.07) 0%,
-      rgba(37, 37, 37, 0.07) 46%,
-      rgba(50, 50, 50, 0.07) 46%,
-      rgba(50, 50, 50, 0.07) 100%
-    ),
-    linear-gradient(90deg, rgb(8, 28, 65), rgb(16, 173, 226));
-  
-  background: url("../images/wallpaper.jpg");
-  background-size: cover;
-
-  position: relative;
-  /* WE SET POSITION RELATIVE HERE SO THAT OUR WAVE ANIMATION HAS A CONTAINER TO ALIGN TO. WITHOUT SETTING THIS TO RELATIVE, THE WAVE ANIMATION BASICALLY JUST FLOATS IN THE MIDDLE OF THE SCREEN */
-  
-}
-
 .HeroGroup {
   margin: 0 auto;
-  max-width: 500px;
-  padding: 150px 50px;
+  max-width: 31.25rem;
+  padding: 9rem 0;
   text-align: center;
 }
 
 .Hero h1 {
   margin: 0;
   color: white;
-  font-size: 60px;
+  font-size: 3.75rem;
   line-height: 1.2;
-  
   opacity: 0;
   /* SET THE TEXT TO BE INVISIBLE WHEN THE PAGE LOADS, THEN RUN THE BELOW ANIMATION WHICH GRADUALLY MAKES IT VISIBLE */
   will-change: translate;
@@ -86,7 +37,6 @@ a {
 
   animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
   /* ANIMATION-TIMING-FUNCTION ALLOWS US TO SPEED UP OR SLOW DOWN THE ANIMATION THROUGHOUT IT'S "CYCLES" - JUST USE A PRESET BY PRESSNIG CTRL + SPACE ON VS CODE */
-  
 }
 
 .Hero p {
@@ -128,38 +78,40 @@ a {
 }
 
 .Hero .Logos {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(6, auto);
   grid-gap: 40px;
-  margin: 100px 0;
+  margin: 70px 0;
   align-items: center;
   /* JUSTIFY ITEMS CENTER FOR MOBILE VIEW MAINLY. */
   justify-items: center;
+}
+.Logos .Logo {
+  transition-duration: 0.5s;
+}
+.Logo:hover {
+  transform: scale(1.2);
 }
 
 .Cards {
   margin: 40px 0 95px 0;
   padding: 100px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   align-items: center;
   justify-items: center;
+  cursor: default;
 }
 
 #CardSection h2 {
   margin: 0px 20px;
-  font-size: 60px;
+  font-size: 3rem;
   text-align: center;
   font-weight: 700;
   color: rgb(0, 34, 44);
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
-}
-
-@media (max-width: 1440px) {
-  .Cards {
-    grid-template-columns: repeat(3, 1fr);
-  }
 }
 
 @media (max-width: 1060px) {
@@ -167,34 +119,33 @@ a {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
-@media (max-width: 720px) {
+@media (max-width: 800px) {
   .Cards {
     grid-template-columns: 1fr;
   }
 }
-/* WHENEVER THE VIEW WINDOW SHRINKS TO < 640, APPLY THE FOLLOWING CSS CHANGES */
-@media (max-width: 640px) {
-  .HeroGroup {
-    padding: 100px 20px;
-  }
-  /* REDUCE HEADER SIZE FROM 60px TO 40px WHEN VIEW WINDOW SHRINKS */
+
+@media (max-width: 720px) {
   .Hero h1 {
-    font-size: 40px;
+    padding: 0 1rem;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
   }
   .Hero p {
+    margin: 3.4rem 0;
     font-size: 24px;
   }
   .Hero .Logos {
     grid-template-columns: repeat(3, auto);
   }
 }
+
 /* KEYFRAMES IS A TOOL FOR ANIMATIONS. @keyframes ANYNAME { */
 @keyframes HeroAnimation {
   /* FIRST WE SET THE STARTING STATE FOR WHEN OUR PAGE LOADS */
   0% {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(50px);
     /* THIS MAKES OUR TEXT APPEAR LOWER ON THE SCREEN THEN GRADUALLY MOVE UPWARD WHEN THE PAGE LOADS */
   }
   /* THEN WE SET THE ENDING STATE */

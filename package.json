@@ -1,31 +1,36 @@
 {
   "name": "modern-web-design-showcase-1",
-  "private": false,
+  "private": true,
   "description": "This website was designed from scratch with React, Gatsby, GraphQL and Styled-Components. It is designed mobile-first with a responsive design including responsive text utilizing 'vw' measurement units as well as media queries.",
   "version": "0.1.0",
   "author": "Jordan Winslow <admin@jordanwinslow.me>",
   "dependencies": {
-    "gatsby": "^2.13.72",
-    "gatsby-image": "^2.2.10",
-    "gatsby-plugin-manifest": "^2.2.6",
-    "gatsby-plugin-offline": "^2.2.7",
-    "gatsby-plugin-react-helmet": "^3.1.4",
-    "gatsby-plugin-sharp": "^2.2.13",
-    "gatsby-source-filesystem": "^2.1.10",
-    "gatsby-transformer-sharp": "^2.2.7",
+    "gatsby": "^2.15.26",
+    "gatsby-image": "^2.2.21",
+    "gatsby-plugin-manifest": "^2.2.18",
+    "gatsby-plugin-react-helmet": "^3.1.8",
+    "gatsby-plugin-sharp": "^2.2.25",
+    "gatsby-source-filesystem": "^2.1.26",
+    "gatsby-transformer-sharp": "^2.2.17",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-helmet": "^5.2.1",
-    "styled-components": "^4.3.2"
+    "styled-components": "^4.4.0"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
   },
   "keywords": [
-    "jordanwinslow"
+    "jordan winslow",
+    "graphql",
+    "react",
+    "responsive",
+    "front end",
+    "web design",
+    "styled-components"
   ],
-  "license": "MIT",
+  "license": "Attribution-NonCommercial-ShareAlike 4.0 International",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
