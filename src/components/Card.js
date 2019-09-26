@@ -1,7 +1,6 @@
 import React from "react"
-import "./Card.css"
+import "./Card.css" // This demonstrates how to use external CSS files instead of styled-components, though I prefer styled-components.
 
-/* USING () INSTEAD OF {} IN AN ARROW FUNCTION IS AN IMPLICIT RETURN. */
 const Card = props => (
   <div className="Card">
     <img src={props.image} alt={props.title} />

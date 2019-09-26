@@ -10,7 +10,14 @@ import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Jordan Winslow - Front End Web Developer Portfolio Website" />
+    {/*
+  ALL STYLING ON THE FOLLOWING JSX IS COMING FROM layout.css.
+  NORMALLY I WOULD MAKE EVERYTHING INTO A styled-component AND SEPARATE OUT
+  EACH SECTION INTO REACT COMPONENTS RATHER THAN MAKING ONE MASSIVE
+  APP FILE, BUT FOR THIS PROJECT I WANTED TO EXPERIMENT, PRACTICE, AND 
+  DEMONSTRATE NUMEROUS STYLING METHODS.
+  */}
+    <SEO title="Jordan Winslow - Front End Web Developer React GraphQL Demo" />
     <div className="Hero">
       <div className="HeroGroup">
         <h1>Combining speed with modern design principles</h1>
@@ -22,6 +29,9 @@ const IndexPage = () => (
           <Link to="/">Learn More</Link>
         </p>
         <div className="Logos">
+          {/*
+        in-line require()'d images can be replaced with image imports
+        */}
           <img
             alt="sketch logo"
             src={require("../images/logo-sketch.png")}
