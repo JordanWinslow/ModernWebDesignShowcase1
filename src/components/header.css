@@ -33,7 +33,12 @@
 .Header a:hover {
   background: #00808067;
 }
-
+.Header img {
+  transition-duration: 0.3s;
+}
+.Header img:hover {
+  transform: scale(1.1);
+}
 .Header button {
   padding: 8px 20px;
   font-size: 20px;

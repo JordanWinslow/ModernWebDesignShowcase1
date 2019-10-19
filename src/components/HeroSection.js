@@ -33,13 +33,15 @@ const HeroSection = () => {
         }}
       />
       <div className="HeroGroup">
-        <h1>Combining speed with modern design principles</h1>
-        <p>
+        <h1 style={{ cursor: "default" }}>
+          Combining speed with modern design principles
+        </h1>
+        <p style={{ cursor: "default" }}>
           53% of mobile site visits are abandoned if pages take longer than 3
           seconds to load.
         </p>
         <p>
-          <Link to="/">Learn More</Link>
+          <a href="https://jordans-portfolio.netlify.com">Learn More</a>
         </p>
         <LogoBox />
       </div>

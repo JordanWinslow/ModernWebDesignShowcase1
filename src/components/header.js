@@ -25,15 +25,25 @@ const Header = () => {
   return (
     <div className={hasScrolled ? "Header HeaderScrolled" : "Header"}>
       <div className="HeaderGroup">
-        <img
-          src={require("../images/logo-jordanwinslow.svg")}
-          width="60"
-          alt="Jordan Winslow Front End Web Developer Logo"
-        />
-        <Link to="/">About</Link>
-        <Link to="/">Contact</Link>
+        <a
+          href="https://jordans-portfolio.netlify.com"
+          style={{ background: "none" }}
+        >
+          <img
+            src={require("../images/logo-jordanwinslow.svg")}
+            width="60"
+            alt="Jordan Winslow Front End Web Developer Logo"
+          />
+        </a>
+        <a href="https://jordans-portfolio.netlify.com/about">About</a>
+        <a href="https://jordans-portfolio.netlify.com/contact">Contact</a>
         <a href="https://jordanwinslow.me">Music</a>
-        <button>Portfolio</button>
+        <a
+          href="https://jordans-portfolio.netlify.com"
+          style={{ background: "none" }}
+        >
+          <button>Portfolio</button>
+        </a>
       </div>
     </div>
   )

@@ -104,8 +104,8 @@ const Section = props => (
     </WaveTop>
     <SectionLogo src={props.logo} />
     <SectionTitleGroup>
-      <SectionTitle>{props.title}</SectionTitle>
-      <SectionText>{props.text}</SectionText>
+      <SectionTitle style={{ cursor: "default" }}>{props.title}</SectionTitle>
+      <SectionText style={{ cursor: "default" }}>{props.text}</SectionText>
     </SectionTitleGroup>
     <WaveBottom>
       <Wave />

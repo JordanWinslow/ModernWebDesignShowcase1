@@ -4,7 +4,7 @@ import Card from "../components/Card"
 const CardBox = () => {
   return (
     <div id="CardSection">
-      <h2>Keep Scrolling</h2>
+      <h2 style={{ cursor: "default" }}>Keep Scrolling</h2>
       <div className="Cards">
         <Card
           title="UI/UX Design"

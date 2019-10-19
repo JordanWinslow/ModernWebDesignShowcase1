@@ -143,7 +143,6 @@ const Button = styled.button`
   padding: 16px 60px;
   font-weight: 600;
   font-size: 24px;
-  justify-self: center;
   cursor: pointer;
   transition: 0.5s;
 
@@ -155,12 +154,17 @@ const Button = styled.button`
 
 const Footer = () => (
   <FooterGroup>
-    <Text>
+    <Text style={{ cursor: "default" }}>
       Website Programmed From Scratch With Gatsby, React, GraphQL &
       Styled-Components by Jordan Winslow.
     </Text>
-    <Copyright>Copyright ©2019</Copyright>
-    <Button>Go Back to Portfolio</Button>
+    <Copyright style={{ cursor: "default" }}>Copyright ©2019</Copyright>
+    <a
+      href="https://jordans-portfolio.netlify.com"
+      style={{ justifySelf: "center" }}
+    >
+      <Button>Go Back to Portfolio</Button>
+    </a>
   </FooterGroup>
 )
 

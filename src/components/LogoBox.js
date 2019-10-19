@@ -8,8 +8,8 @@ const LogoBox = () => {
         */}
       <img
         className="Logo"
-        alt="sketch logo"
-        src={require("../images/logo-sketch.png")}
+        alt="javascript logo"
+        src={require("../images/logo-javascript.png")}
         width="50"
       />
       <img
@@ -20,14 +20,14 @@ const LogoBox = () => {
       />
       <img
         className="Logo"
-        alt="studio logo"
-        src={require("../images/logo-studio.png")}
+        alt="css3 logo"
+        src={require("../images/logo-css3.png")}
         width="50"
       />
       <img
         className="Logo"
-        alt="framer logo"
-        src={require("../images/logo-framer.png")}
+        alt="styled components logo"
+        src={require("../images/logo-styled-components.png")}
         width="50"
       />
       <img
@@ -38,8 +38,8 @@ const LogoBox = () => {
       />
       <img
         className="Logo"
-        alt="swift logo"
-        src={require("../images/logo-swift.png")}
+        alt="graphQL logo"
+        src={require("../images/logo-graphql.png")}
         width="50"
       />
     </div>
