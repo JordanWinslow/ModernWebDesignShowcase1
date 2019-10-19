@@ -5,9 +5,7 @@
   </a>
 </p>
 <p>
-  <a href="https://modern-web-design-showcase-1.netlify.com/">
     ![](https://media.giphy.com/media/WojPmUx6A2c4fVIU0I/giphy.gif)
-  </a>
 <h1 align="center">
   Jordan Winslow: Front End Web Developer Website Showcase Item 1
 </h1>
