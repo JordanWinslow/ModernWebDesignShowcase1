@@ -24,10 +24,12 @@ const HeroSection = () => {
         alt="Snow Covered Mountains With Starry Sky Wallpaper"
         style={{
           position: "absolute",
+          zIndex: "-2",
           width: "100vw",
           height: "100vh",
+          minHeight: "645px",
           maxWidth: "100%",
-          maxHeight: "1000px"
+          maxHeight: "1000px",
         }}
       />
       <div className="HeroGroup">
@@ -40,9 +42,9 @@ const HeroSection = () => {
           <Link to="/">Learn More</Link>
         </p>
         <LogoBox />
-        {/**************WAVE ANIMATION*************/}
-        <Wave />
       </div>
+      {/**************WAVE ANIMATION*************/}
+      <Wave />
     </div>
   )
 }

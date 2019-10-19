@@ -73,6 +73,7 @@ a {
 .Hero svg {
   /* POSITION THE ANIMATED WAVE BAR ABSOLUTE SO WE CAN ALIGN IT ON THE BOTTOM LEFT OF OUR HERO CONTAINER */
   position: absolute;
+  z-index: -1;
   bottom: -5px;
   left: 0;
 }
@@ -137,6 +138,29 @@ a {
   }
   .Hero .Logos {
     grid-template-columns: repeat(3, auto);
+  }
+}
+@media (max-height: 645px) {
+  .Hero svg {
+    position: relative;
+    bottom: 400px;
+  }
+}
+@media (max-width: 400px) {
+  .HeroGroup h1 {
+    padding: 0;
+  }
+  .HeroGroup {
+    padding: 6rem 0;
+  }
+  .HeroGroup p {
+    margin: 0 0 5rem 0;
+  }
+}
+@media (max-width: 340px) and (max-height: 650px) {
+  .Hero svg {
+    position: relative;
+    bottom: 500px;
   }
 }
 
