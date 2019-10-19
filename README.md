@@ -3,7 +3,7 @@
     <img alt="Jordan Winslow Logo" src="https://gdurl.com/q7oI" />
   </a>
 </p>
-<div width="100%">
+<div align="center">
   
 ![](https://media.giphy.com/media/WojPmUx6A2c4fVIU0I/giphy.gif)
 
