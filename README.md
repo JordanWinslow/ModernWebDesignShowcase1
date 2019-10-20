@@ -18,5 +18,5 @@
   The code was written with numerous techniques to demonstrate knowledge of imports, exports, require(), styled-components vs. master CSS file and local component css files. If the code appears "hacky" this is why!
 </p>
 <p>
-  Click any of the above images to be redirected to the live website on Netlify. (Please note that this is a demonstration website and therefore none of the links actually go anywhere. Please feel free to experiment with clicking links and hover effects to see animations!)
+  Click the JW image or the link in the description to be redirected to the live website on Netlify. Please feel free to experiment with clicking links and hover effects to see animations! Links redirect to my primary portfolio website.
 </p>
